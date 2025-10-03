@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================== BASIC META ================== -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tanvir Hossain">
+  <meta name="description" content="I am Tanvir Hossain, an Agricultural Engineer revolutionizing farming with AI, Robotics, Machine Vision, Automation, IoT, and Spectroscopy to deliver sustainable precision agriculture solutions.">
+  <meta name="keywords" content="Precision Agriculture, AI in Agriculture, Smart Farming, Robotics, Machine Vision, Automation, IoT, Spectroscopy, Agricultural Engineer, Portfolio">
+
+  <!-- ================== FAVICON ================== -->
+  <link rel="icon" type="image/png" href="assets/profile-pic.png">
+
+  <!-- ================== OPEN GRAPH (SOCIAL SHARING) ================== -->
+  <meta property="og:title" content="Tanvir Hossain - Portfolio"/>
+  <meta property="og:description" content="I am Tanvir Hossain, an Agricultural Engineer revolutionizing farming with AI, Robotics, Machine Vision, Automation, IoT, and Spectroscopy to deliver sustainable precision agriculture solutions."/>
+  <meta property="og:image" content="https://tanvir-on.github.io/assets/profile-pic.png"/>
+  <meta property="og:url" content="https://tanvir-on.github.io/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Tanvir Hossain Portfolio"/>
+
+  <!-- ================== TWITTER CARD ================== -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Tanvir Hossain - Portfolio"/>
+  <meta name="twitter:description" content="I am Tanvir Hossain, an Agricultural Engineer revolutionizing farming with AI, Robotics, Machine Vision, Automation, IoT, and Spectroscopy to deliver sustainable precision agriculture solutions."/>
+  <meta name="twitter:image" content="https://tanvir-on.github.io/assets/profile-pic.png"/>
+  <!-- <meta name="twitter:site" content="@YourTwitterHandle"/> -->
+
+  <!-- ================== TITLE ================== -->
+  <title>Tanvir Hossain | Portfolio</title>
+
+  <!-- ================== GOOGLE FONTS ================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- ================== STYLESHEETS ================== -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+
+  <!-- =======================
+       DESKTOP NAVIGATION
+  ======================== -->
+<nav>
+  <div class="logo">Tanvir Hossain</div>
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#about">ABOUT ME</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#awards">AWARDS</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#contact-me">CONTACT ME</a></li>
+    <li><a href="https://drive.google.com/file/d/1gJlcBvEUkiAI2acHhOn204bALrMHyVoB/view?usp=sharing" target="_blank">CV</a></li>
+  </ul>
+</nav>
+
+
+
+
+  <!-- =======================
+       INTRO SECTION
+  ======================== -->
+  <section id="intro">
+    <p class="section__subtitle">Welcome, I'm</p>
+    <h1 class="title">Tanvir Hossain</h1>
+    <h3 class="section__title">I  <span id="element"></span></h3>
+  </section>
+  <!-- =======================
+       PROFILE SECTION
+  ======================== -->
+<section class="profile-section">
+  <!-- Profile Image -->
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.png" alt="Profile">
+  </div>
+
+  <!-- =======================
+       ABOUT ME SECTION
+  ======================== -->
+  <div class="about-me" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Agricultural Engineer currently pursuing a B.Sc. in Agricultural Engineering at Bangladesh Agricultural University under the Department of Farm Power and Machinery. My academic and research endeavors are principally oriented toward Precision Agriculture and non-destructive food quality assessment. I am deeply motivated to harness the synergies of transformative technologies—including Artificial Intelligence, automation, Machine Vision, and the Internet of Things—to reimagine agricultural systems. Through this integration, I aspire to advance productivity, refine operational efficiency, and cultivate pathways toward resilient and ecologically sustainable food production.
+    </p>
+    <p>
+      I have engaged in a diverse array of projects encompassing early prediction of natural disease using remote sensing data, plant disease forecasting, image-based livestock weight estimation, smart irrigation systems and Solar based post harvesting, farm automation, and non-destructive fruit quality assessment. My technical expertise spans programming (Python, C/C++), data science, computer vision with OpenCV, embedded systems, mechatronics, AutoCAD, mechanical design, and geospatial analysis with ArcGIS.
+    </p>
+    <p>
+      Beyond my academic pursuits, I am an avid coder and a lifelong learner, continually seeking to expand my skill set and stay abreast of emerging technologies. In parallel, I have been cultivating a robust foundation in statistics, mathematics, mechanical principles, and spectroscopy, which collectively underpin my capacity to address complex agricultural and engineering challenges with precision and innovation.
+    </p>
+  </div>
+</section>
+
+
+<script>
+const container = document.querySelector(".section__pic-container");
+
+function resizeContainer() {
+  let screenWidth = window.innerWidth;
+
+  if (screenWidth <= 400) {
+    container.style.width = "250px";
+    container.style.height = "250px";
+  } else if (screenWidth <= 600) {
+    container.style.width = "300px";
+    container.style.height = "300px";
+  } else if (screenWidth <= 900) {
+    container.style.width = "400px";
+    container.style.height = "400px";
+  } else {
+    container.style.width = "500px";
+    container.style.height = "500px";
+  }
+}
+
+// On page load
+window.addEventListener("load", () => {
+  resizeContainer();
+  setTimeout(() => {
+    container.classList.add("show");  // initial popup animation
+  }, 100);
+});
+
+// On window resize
+window.addEventListener("resize", resizeContainer);
+
+</script>
+
+<!-- =======================
+     SKILLS SECTION
+======================= -->
+<section id="skills">
+  <h2 class="skills-title">Skills</h2>
+  <div class="skills-wrapper">
+
+    <!-- Proficiency Card -->
+    <div class="card">
+      <h3>Proficiency</h3>
+      <div class="circle">
+        <div class="circle-liquid"></div>
+        <div class="circle-inner">0%</div>
+      </div>
+      <div class="skill-name">Click a Skill</div>
+    </div>
+
+    <!-- Skills Card -->
+    <div class="skills-card">
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          <span data-level="80" data-skill="Python">Python</span>,
+          <span data-level="70" data-skill="C/C++">C/C++</span>,
+          <span data-level="75" data-skill="HTML/CSS">HTML/CSS</span>,
+          <span data-level="70" data-skill="OpenCV">OpenCV</span>,
+          <span data-level="65" data-skill="Scikit-learn">Scikit-learn</span>,
+          <span data-level="75" data-skill="TensorFlow">TensorFlow</span>,
+          <span data-level="69" data-skill="Keras">Keras</span>,
+          <span data-level="80" data-skill="Pandas">Pandas</span>,
+          <span data-level="80" data-skill="Matplotlib">Matplotlib</span>
+        </li>
+        <li>
+          <span data-level="50" data-skill="Spectroscopy">Spectroscopy</span>,
+          <span data-level="50" data-skill="Hyperspectral imaging">Hyperspectral imaging</span>
+        </li>
+        <li>
+          <span data-level="50" data-skill="Raspberry Pi">Raspberry Pi</span>,
+          <span data-level="73" data-skill="Arduino">Arduino</span>,
+          <span data-level="60" data-skill="Microcontroller">Microcontroller</span>,
+          <span data-level="65" data-skill="Automation">Automation</span>
+        </li>
+        <li>
+          <span data-level="75" data-skill="ArcGIS">ArcGIS</span>,
+          <span data-level="80" data-skill="AutoCAD">AutoCAD</span>,
+          <span data-level="70" data-skill="Sketchup">Sketchup</span>,
+          <span data-level="50" data-skill="SolidWorks">SolidWorks</span>,
+          <span data-level="65" data-skill="MATLAB">MATLAB</span>
+        </li>
+        <li>
+          <span data-level="80" data-skill="Problem Solving">Problem Solving</span>
+        </li>
+      </ul>
+    </div>
+    
+
+  </div>
+</section>
+
+
+  <!-- =======================
+       AWARDS SECTION
+  ======================== -->
+  <section id="awards">
+    <div class="container">
+      <h2 class="awards-title">Awards</h2>
+      <div class="awards-card">
+        <ul>
+          <li class="award-item">
+            2nd place in BARI Farm Mechanization Idea competition -2025
+            <button class="doc-btn" data-doc="https://drive.google.com/file/d/1gJlcBvEUkiAI2acHhOn204bALrMHyVoB/view?usp=drive_link">View Document</button>
+          </li>
+          <li class="award-item">
+           3rd Place - inter-school  Science Fair, Feni District -2018
+            
+          </li>
+          <li class="award-item">
+            Fourth Place – Inter-College Science Fair, Feni District -2020
+            
+          </li>
+          <li class="award-item">
+            Fourth Place – Academic Merit, Faculty of Agricultural Engineering & Technology, Bangladesh Agricultural University -2025 
+            
+          <!--
+          <li class="award-item">
+            Dean's List for Academic Excellence, BAU 2021-2023
+            <button class="doc-btn" data-doc="https://drive.google.com/your-document-link">View Document</button>
+          </li>
+        -->
+          
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+       PROJECTS SECTION
+  ======================== -->
+  <section id="projects" lang="en" style=" max-height: fit-content;"> 
+    <h2 >Projects</h2>
+   
+
+        <!-- Project 1 -->
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title" lang="en">
+                AgriSpectro: Affordable Spectroscopic Device for Non-destructive Fruit Quality Analysis <br>
+            </div>
+            <div class="project-details">
+                <p>
+                  
+                    
+                    Recent advancements in non-destructive evaluation techniques, particularly Visible and Near-Infrared (Vis/NIR) Spectroscopy, have emerged as powerful tools for assessing internal fruit quality. These methods enable accurate measurement of parameters such as sugar content, acidity, firmness, and oil concentration without causing any physical damage to the produce.                    <br>
+                    <br>
+                    This project seeks to develop a cost-effective, portable Vis/NIR device capable of rapid, non-destructive fruit quality assessment. The work encompasses the design and fabrication of the device, systematic collection of spectral data, and the application of machine learning algorithms to predict internal fruit attributes. Ultimately, the initiative aims to empower smallholder farmers with actionable insights for optimal harvest timing and market decisions, thereby minimizing postharvest losses, enhancing productivity, and improving overall profitability.                    
+                </p>
+                <ul>
+                    <li>Reducing postharvest losses, enhancing productivity, and improving profitability.</li>
+                </ul>
+                <p>  
+                  
+                  <div class="cta-box">
+                    <a href="https://www.researchgate.net/publication/392323787_AgriSpectro_Affordable_Spectroscopic_Device_for_Non-destructive_Fruit_Quality_Analysis?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank">To Know More </a>
+                </div>
+              </p>
+
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title">
+                Prediction of Early Blight Disease in Potato using Machine Learning
+            </div>
+            <div class="project-details">
+                <p>
+                  
+                    Potato (Solanum tuberosum L.) is one of the most important crops in Bangladesh but is highly vulnerable to Early Blight, a fungal disease that significantly reduces yield and quality. Disease development is strongly influenced by environmental conditions such as temperature, humidity, and wind speed. For instance, higher temperatures (35–38°C), lower evening humidity (30–58%), and moderate wind (1.2–2.2 km/h) have been shown to increase disease severity, while prolonged periods of high relative humidity (>90% for 5–6 hours) accelerate spore germination. Leveraging weather and microclimatic data provides an opportunity to predict disease outbreaks and enable timely interventions, helping farmers minimize losses and maintain crop health.                    This system leverages machine learning algorithms to analyze weather patterns and predict disease outbreaks, enabling proactive management strategies.
+                    
+                    <br>
+                    <br>
+                    Our project develops an AI-powered early warning system for predicting Early Blight in potatoes using real-time microclimatic data from a portable mini weather station. The system provides farmers with timely, data-driven insights for precise disease management, reducing crop losses, minimizing fungicide use, and supporting sustainable agricultural practices across diverse farming conditions in Bangladesh.                </p>
+                <ul>
+                    <li>Facilitates data-driven, precise disease management, helping farmers reduce losses and optimize fungicide usage.</li>
+                    <li>Provides a practical and scalable solution for diverse farming conditions, enhancing potato crop health, productivity, and sustainability.</li>
+                </ul>
+                <p>
+                <div class="cta-box">
+                    <a href="https://www.researchgate.net/publication/392710631_Prediction_of_Early_Blight_Disease_in_Potato_Using_Machine_Learning" target="_blank">To Know More</a>
+                </div>
+
+                </p>
+
+            </div>
+        </div>
+                <!-- Project 3 -->
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title">
+                Smart Agriculture Robot: An Arduino-Powered Platform for Automated Soil Monitoring and Irrigation Control            </div>
+            <div class="project-details">
+                <p>
+                    
+                    The “Smart Agriculture Robot” is an Arduino-based automated platform designed to monitor soil conditions and control irrigation efficiently. Equipped with sensors to measure soil moisture, temperature, and other key parameters, the system makes real-time decisions to optimize water usage and maintain optimal crop growth conditions. By automating routine agricultural tasks, this platform reduces labor, conserves water resources, and enhances overall farm productivity. Its modular and cost-effective design makes it suitable for small to medium-scale farms, promoting sustainable and precision agriculture practices.                    
+                </p>
+                <ul>
+                    <li>Demonstrate automation and manual control coexistence.</li>
+                    <li>Minimizes the need for farmers to constantly check soil conditions, saving time and labor.</li>
+                </ul>
+                <p>
+
+                <div class="cta-box">
+                    <a href="https://github.com/Tanvir-on/-Smart-Agricultural-Robot-k" target="_blank">To Know More</a>
+                </div>
+                </p>
+
+            </div>
+        </div>
+                <!-- Project 4 -->
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title">
+                BARI-Based Crop Suggestion System: Soil and Season-Specific Recommendations for Optimal Yield            </div>
+            <div class="project-details">
+                <p>
+                
+                  This project develops a data-driven Crop Suggestion System based on BARI (Bangladesh Agricultural Research Institute) guidelines, providing soil and season-specific crop recommendations for farmers. By analyzing key soil parameters such as pH, nitrogen (N), phosphorus (P), and potassium (K), along with seasonal conditions, the system identifies the most suitable crops for cultivation. The platform aims to enhance agricultural productivity, optimize resource utilization, and support smallholder farmers in making informed planting decisions. By integrating local research data with user-friendly recommendations, it promotes sustainable and efficient farming practices across Bangladesh.
+                </p>
+                <ul>
+                    <li>Provides crop recommendations tailored to seasonal conditions for maximum yield.</li>
+                    <li>Helps farmers plan cultivation effectively, reducing trial-and-error losses.</li>
+                </ul>
+                <p>
+                <div class="cta-box" onclick="toggleProject(this.closest('.project-box'), event)">
+                    <a href="https://github.com/Tanvir-on/Crop-Recommendation" target="_blank">To Know More </a>
+                </div>
+
+
+                </p>
+
+            </div>
+        </div>
+                <!-- Project 5 -->
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title">
+                Real-Time Weather App            </div>
+            <div class="project-details">
+                <p>
+                
+                  The Real-Time Weather App provides instant weather information, allowing users to check conditions by entering a city name or using geographic coordinates. It displays key data such as temperature, humidity, wind speed, and overall weather conditions. Users can also save weather data with timestamps for logging or historical reference. The app helps users make informed decisions about daily activities, travel, and planning, offering convenience and real-time insights into local and global weather conditions.                    
+                </p>
+                <ul>
+                    <li>Search weather by city name or latitude & longitude coordinates.</li>
+                    <li>Allows users to save weather data with timestamps for logging and historical reference.li>
+                </ul>
+                <p>
+                <div class="cta-box">
+                    <a href="https://github.com/Tanvir-on/Real-Time-Weather-App" target="_blank">To Know More </a>
+                </div>
+                </p>
+
+
+               
+
+            </div>
+        </div>
+
+                        <!-- Project 5 
+        <div class="project-box" onclick="toggleProject(this)">
+            <div class="project-title">
+                Prediction of Early Blight Disease in Potato using Machine Learning
+            </div>
+            <div class="project-details">
+                <p>
+                  
+                    Potato (Solanum tuberosum L.) is highly susceptible to early blight. Environmental factors like temperature, humidity, and wind significantly affect fungal activity. Our AI-powered predictive model uses real-time microclimatic data to give farmers timely warnings.
+                    <br>
+                    <br>
+                    This system leverages machine learning algorithms to analyze weather patterns and predict disease outbreaks, enabling proactive management strategies.
+                    
+                    <br>
+                    <br>
+                    By integrating IoT sensors for real-time data collection, we provide farmers with actionable insights to mitigate crop losses and enhance yield quality.
+                    
+                </p>
+                <ul>
+                    <li>Practical and scalable solution for managing early blight.</li>
+                    <li>Data-driven decisions support environmental sustainability.</li>
+                </ul>
+                <p>
+
+                <div class="cta-box">
+                    <a href="https://github.com/your-link" target="_blank">To Know More about this project</a>
+                </div>
+
+                </p>
+            </div>
+        </div>
+      -->
+
+    </div>
+</section>
+  <!-- =======================
+       CONTACT ME SECTION
+  ======================== -->
+<section id="contact-me">
+  <!-- Section Title -->
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-container">
+
+    <!-- Left Section -->
+    <div class="contact-left">
+      <h3>Get in Touch</h3>
+      <p class="subtitle">I'd like to hear from you!</p>
+      
+
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +880 130 1688 505</p>
+        <p><i class="fas fa-envelope"></i> tanvir.2205097@bau.edu.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Mymensingh, Bangladesh</p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="contact-right">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="social-icons">
+
+  <a href="https://www.linkedin.com/in/tanvir-hossain-67a6b62a8/">
+    <img src="assets/icons8-linkedin-50.png" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/Tanvir-on">
+    <img src="./assets/icons8-github-logo-64.png" alt="GitHub">
+  </a>
+  <a href="https://www.researchgate.net/profile/Tanvir-Hossain-67?ev=hdr_xprf">
+    <img src="./assets/icons8-researchgate-24 (1).png" alt="Researchgate">
+  </a>
+  <a href="https://www.facebook.com/tanvir.hossain.013">
+    <img src="./assets/icons8-facebook-48.png" alt="facebook">
+  </a>
+  <a href="https://www.instagram.com/tan_veer_hossain_/">
+    <img src="./assets/icons8-instagram-48.png" alt="Instagram">
+  </a>
+  <a href="https://x.com/Tanvir_Ho_ssain">
+    <img src="./assets/icons8-x-50.png" alt="Twitter">
+  </a>
+
+  </div>
+
+</section>
+
+
+
+
+  <!-- =======================
+       SCRIPTS
+  ======================== -->
+  <!-- Typed.js Animation -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Skills & Awards Scripts -->
+  <script>
+    // Typed.js Animation
+    var typed = new Typed("#element", {
+      strings: [
+        '<span style="color:white;">am an Agricultural Engineer</span>',
+        '<span style="color:white;">am passonate about precision agriculture</span>',
+        '<span style="color:white;">love to code</span>',
+        '<span style="color:white;">enjoy data analysis</span>',
+        '<span style="color:white;">feel enjoy to explore AI,Machine Learning and deep learning</span>',
+        '<span style="color:white;">make Farming Smarter with Data</span>',
+        '<span style="color:white;">love to solve real-world problems</span>',
+        '<span style="color:white;">love to play with robot</span>',
+        '<span style="color:white;">am a lifelong learner</span>'
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      backDelay: 1000,
+      smartBackspace: true
+    });
+
+
+        // Awards Document Buttons
+        document.querySelectorAll('.award-item').forEach(item => {
+          const btn = item.querySelector('.doc-btn');
+          btn.style.display = 'none';
+
+          item.addEventListener('click', () => {
+            btn.style.display = btn.style.display === 'none' ? 'inline-block' : 'none';
+          });
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.open(btn.getAttribute('data-doc'), '_blank');
+      });
+    });
+
+
+
+
+
+  </script>
+
+
+
+  <script>
+
+const liquid = document.querySelector('.circle-liquid');
+const circleInner = document.querySelector('.circle-inner');
+const skillNameDiv = document.querySelector('.skill-name');
+const skills = document.querySelectorAll('.skills-card span');
+
+let currentLevel = 0; // store the current fill level
+
+skills.forEach(skill => {
+  skill.addEventListener('click', () => {
+    const targetLevel = parseInt(skill.dataset.level);
+    const skillName = skill.dataset.skill;
+
+    // Set skill name
+    skillNameDiv.textContent = skillName;
+
+    // Animate pouring effect (liquid height)
+    liquid.style.height = targetLevel + "%";
+
+    // Animate % number smoothly from currentLevel → targetLevel
+    let step = currentLevel < targetLevel ? 1 : -1; // decide direction
+    clearInterval(window.levelInterval); // clear any ongoing animation
+
+    window.levelInterval = setInterval(() => {
+      if (currentLevel === targetLevel) {
+        clearInterval(window.levelInterval);
+      } else {
+        currentLevel += step;
+        circleInner.textContent = currentLevel + "%";
+      }
+    }, 25); // speed
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('active'); // optional for X animation
+  });
+});
+// ================== NAVBAR HAMBURGER ==================
+function toggleMenu() {
+  const menu = document.getElementById("menu-links");
+  const icon = document.querySelector(".nav_icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector("nav");
+  if (window.scrollY > 50) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+
+// ================== PROJECT TOGGLE + MULTIPLE OPEN + SMART SCROLL ==================
+function toggleProject(element) {
+    const details = element.querySelector('.project-details');
+    const isOpen = details.classList.contains('expanded');
+
+    if (!isOpen) {
+        // Open clicked project
+        details.classList.add('expanded');
+        element.classList.add('active');
+        details.style.maxHeight = details.scrollHeight + "px";
+
+        // =================== Smart Scroll ===================
+        const navbarHeight = 70; // adjust to your navbar height
+        const rect = element.getBoundingClientRect();
+        const scrollY = window.scrollY;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        const targetTop = scrollY + rect.top - navbarHeight;
+
+        // Scroll only if element bottom is below viewport
+        if (rect.bottom > viewportHeight) {
+            window.scrollTo({
+                top: targetTop,
+                behavior: 'smooth'
+            });
+        }
+        // Scroll if element top is hidden behind navbar
+        else if (rect.top < navbarHeight) {
+            window.scrollTo({
+                top: targetTop,
+                behavior: 'smooth'
+            });
+        }
+        // Else element fully visible → no scroll
+    } else {
+        // Close clicked project
+        details.style.maxHeight = null;
+        details.classList.remove('expanded');
+        element.classList.remove('active');
+    }
+}
+
+// ================== CTA BOX CLICK ==================
+document.querySelectorAll('.cta-box').forEach(cta => {
+  cta.addEventListener('click', function(e) {
+    if (e.target.tagName !== 'A') {
+      const projectBox = this.closest('.project-box');
+      toggleProject(projectBox);
+    }
+  });
+});
+
+
+
+
+  </script>
+
+
+  
+
+</body>
+</html>
