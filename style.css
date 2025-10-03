@@ -378,7 +378,7 @@ element.style{
 
 
 .project-box {
-    background-color: #605d5d74;
+    background-color: #2f4444;
     color: #f0efef;
     padding: 18px 25px;
     margin-bottom: 10px;
@@ -665,3 +665,4 @@ nav {
   gap: 1rem;
   list-style: none;
 }
+
