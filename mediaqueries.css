@@ -20,9 +20,9 @@
     width: 200px;              /* small box */
     text-align: left;
   }
-
   .nav-links.show {
     display: flex;
+    background-color: #3e8181;
   }
 
   .nav-links li a {
@@ -499,3 +499,4 @@ opacity: 0;
 
 
 }
+
