@@ -344,7 +344,7 @@
  
 }
 .project-box:hover {
-    background-color: #333333;
+   
     border: 1px solid rgba#34d4f8;
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.855);
 }
@@ -352,7 +352,7 @@
 
 /* ACTIVE / EXPANDED */
 .project-box.active {
-    background-color: #333333;
+   
     border: 1px solid #34d4f8;
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.855);
     padding-bottom: 25px;
@@ -499,4 +499,5 @@ opacity: 0;
 
 
 }
+
 
