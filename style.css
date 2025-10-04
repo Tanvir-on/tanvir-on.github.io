@@ -57,7 +57,7 @@ html{
 }
 
 .nav-links a:hover {
-  background-color: #0eece8ed;
+  background-color: #34d4f8;
 
   color: #fff;
 }
@@ -66,7 +66,7 @@ html{
 
 element.style{
 
-  max-height: 2000px;
+  max-height: 2500px;
 }
 
 /* =======================
@@ -187,7 +187,7 @@ element.style{
 
 #skills .card, 
 #skills .skills-card {
-  background: #605d5d74;
+  background: #2f4444;
   border-radius: 12px;
   padding: 1rem;
   display: flex;
@@ -233,7 +233,7 @@ element.style{
   bottom: 0;
   width: 100%;
   height: 0%; /* start empty */
-  background: linear-gradient(to top, #0edbd7ec 40%, #1ee6ff 100%);
+  background: linear-gradient(to top, #0edbd8cf 40%, #1ee6ff 100%);
   z-index: 1;
   transition: height 1.5s ease; /* smooth pour */
 }
@@ -305,7 +305,7 @@ element.style{
 
 }
 #awards .awards-card {
-  background: #605d5d74;
+  background: #2f4444;
   border-radius: 12px; 
   padding: 2rem; 
   width: 1200px;
@@ -348,7 +348,7 @@ element.style{
   display: none;
   margin-left: 1rem;
   padding: 0.3rem 0.6rem;
-  background: #02264a;
+  background: #0573ad;
   color: white;
   border: none;
   border-radius: 4px;
@@ -378,7 +378,7 @@ element.style{
 
 
 .project-box {
-    background-color: #2f4444;
+    background-color:#2f4444;
     color: #f0efef;
     padding: 18px 25px;
     margin-bottom: 10px;
@@ -398,16 +398,16 @@ element.style{
 
 }
 .project-box:hover {
-    background-color: #333333;
-    border: 1px solid rgba#34d4f8;
+    background-color: #355050f1;
+    border: 10px solid rgba#34d4f8;
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.855);
 }
 
 
 /* ACTIVE / EXPANDED */
 .project-box.active {
-    background-color: #333333;
-    border: 1px solid #34d4f8;
+    background-color: #2f4444;
+    border: 1px solid #138ce2;
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.855);
     padding-bottom: 25px;
         display: flex;
@@ -478,7 +478,7 @@ opacity: 0;
 
 
 .cta-box a {
-    color: hsla(181, 93%, 46%, 0.697);
+    color:#0599ad;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -493,9 +493,9 @@ opacity: 0;
 
 /* Hover effect */
 .cta-box:hover a {
-    color: #00e5ff; /* glowing color */
+    color: #00e5ffea; /* glowing color */
     transform: translateY(-3px); /* subtle pop-up */
-    text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 20px #00e5ff; /* glow */
+    text-shadow: 0 0 5px #00e5ffed, 0 0 10px #00e5ffec, 0 0 20px #00e5ff; /* glow */
 }
 
 
@@ -639,7 +639,7 @@ nav {
 
 .logo {
   font-size: 1.5rem;
-  color: #0eece8c5;
+  color: #67bedc;
   font-weight: bold;
 }
 
@@ -665,4 +665,3 @@ nav {
   gap: 1rem;
   list-style: none;
 }
-
